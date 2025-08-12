@@ -1,6 +1,14 @@
 # Resume
 
+[![Build and Deploy Resume](https://github.com/maximbircu/my-resume/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/maximbircu/my-resume/actions/workflows/build-and-deploy.yml)
+
 This repository contains my professional resume built with LaTeX.
+
+## 📄 View Resume
+
+**Latest version:** [https://maximbircu.github.io/my-resume/resume.pdf](https://maximbircu.github.io/my-resume/resume.pdf)
+
+**Full page view:** [https://maximbircu.github.io/my-resume](https://maximbircu.github.io/my-resume)
 
 ## Project Structure
 
@@ -63,3 +71,19 @@ The compiled PDF will be available at `build/resume.pdf`.
 
 - Only source files (`src/`) and configuration files are tracked in git
 - Build artifacts in `build/` directory are ignored via `.gitignore`
+
+## Automatic Deployment
+
+This repository uses GitHub Actions to automatically:
+
+1. **Build** the resume PDF on every push to `main`
+2. **Deploy** to GitHub Pages at [maximbircu.github.io/my-resume](https://maximbircu.github.io/my-resume)
+3. **Update** the public resume URL automatically
+
+### Integration with Personal Website
+
+Your personal website can directly link to or embed:
+- **PDF URL**: `https://maximbircu.github.io/my-resume/resume.pdf`
+- **Page URL**: `https://maximbircu.github.io/my-resume`
+
+No API calls or authentication needed - just use the URLs directly!
