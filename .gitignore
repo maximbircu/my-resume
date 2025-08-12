@@ -1,0 +1,38 @@
+# LaTeX auxiliary files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.gz
+*.xdv
+
+# LaTeX output files
+*.pdf
+*.dvi
+*.ps
+
+# Build directory
+build/
+dist/
+
+# Editor files
+.DS_Store
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS generated files
+Thumbs.db

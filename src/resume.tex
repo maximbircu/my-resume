@@ -1,0 +1,127 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{titlesec,color,enumitem,fancyhdr,tabularx,latexsym,marvosym,fullpage,hyperref,ulem,babel}
+\usepackage[default]{sourcesanspro}
+\urlstyle{same}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0in}
+\renewcommand{\footrulewidth}{0in}
+\setlength{\tabcolsep}{0in}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\textheight}{1.0in}
+\raggedbottom{}
+\raggedright{}
+\titleformat{\section}{\scshape\large}{}{0em}{\color{blue}}[\color{black}\titlerule\vspace{-4pt}]
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\ULdepth}{2pt}
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[rightmargin=0.11in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+\newcommand{\resumeQuadHeading}[4]{\item
+  \begin{tabular*}{0.96\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}
+}
+\newcommand{\resumeHeadingListStart}{\begin{itemize}[leftmargin=0.15in,label={}]}
+\newcommand{\resumeHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+% ---- HEADER ----
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Huge Maxim Bîrcu} & Chisinau, Moldova \\
+  \href{https://linkedin.com/in/maximbircu}{\uline{LinkedIn}} $|$
+  \href{https://github.com/maximbircu}{\uline{GitHub}} $|$
+  \href{mailto:maximbircu@gmail.com}{\uline{maximbircu@gmail.com}} $|$
+  +373 62136025 &
+\end{tabular*}
+
+\vspace{0.75em} % spacing between header and summary
+
+% ---- SUMMARY ----
+\small{
+Staff Android Engineer / Tech Lead with 7+ years building and scaling Android TV \& Mobile apps for millions of users. Proven impact in cross-team architecture unification, playback quality, developer tooling, localization, and release safety. Deep Kotlin/Android expertise (Compose, Hilt, Ktor, Modularization, SDUI). Converts complex technical goals into measurable business outcomes.
+}
+
+% ---- EXPERIENCE ----
+\section{Experience}
+\resumeHeadingListStart
+
+  \resumeQuadHeading{Staff Android Engineer / Tech Lead}{Mar 2018 -- Present}{Crunchyroll (Sony Pictures Entertainment)}{Remote}
+    \resumeItemListStart
+      \resumeItem{\textbf{Global Market Expansion:} Led full app internationalization, implemented AI-powered translations, and delivered complete Hindi localization under a compressed schedule — later adopted by iOS/account teams; documented in official Crunchyroll Engineering Blog.}
+      \resumeItem{\textbf{Multiple Profiles Launch:} Delivered this high-risk feature simultaneously across all clients by connecting multiple client teams with backend, defining API contracts and system design, planning cross-platform work, and ensuring flawless, on-time delivery with no feature flag, rollback, or margin for error.}
+      \resumeItem{\textbf{Silent Login (SSO):} Delivered proof-of-concept in 3 days, led architecture design, and implemented production solution — improving cross-app user experience and security for millions of subscribers.}
+      \resumeItem{\textbf{Feature Flagging:} Introduced and led integration of a feature flagging system enabling hidden feature launches, A/B testing, and gradual rollouts — reducing release risk, accelerating experimentation, and empowering product teams to validate features with live user segments.}
+      \resumeItem{\textbf{Release Pilot Program:} Established rotational release pilot process, improving deployment reliability, building release ownership across the team, and enabling confident urgent hotfixes.}
+      \resumeItem{\textbf{Playback Optimization:} Reduced video error rate by \textbf{67\%} (4.5\%→1.5\%) and increased Mux playback success score from \textbf{92→95} by introducing structured measurement processes, optimizing native player performance, and aligning backend/client error handling.}
+      \resumeItem{\textbf{Native Player Reuse:} Refactored Android TV native video player for cross-platform reuse and integrated it into the mobile app — replacing web-based playback with a high-performance native experience and accelerating delivery.}
+      \resumeItem{\textbf{Server-Driven UI:} Designed and implemented Foxhound, an Annotation Processor–based SDUI framework enabling dynamic UI rendering and future cross-platform experimentation.}
+      \resumeItem{\textbf{Code Sharing Enablement:} Enabled large-scale code sharing between Android TV and Mobile by aligning architecture (migrating from MVC to MVI/Clean Architecture, integrating Hilt, standardizing on Ktor, adopting Compose) and consolidating projects into a unified monorepo — reducing duplicated code and accelerating feature delivery by \textbf{~30\%}.}
+      \resumeItem{\textbf{Multi-Year Modularization:} Led modularization of the Android monolith by defining module boundaries, establishing development standards, and guiding structured migration — enabling parallel development, reducing build times, and improving maintainability at scale.}
+      \resumeItem{\textbf{Cross-Platform Alignment:} Strengthened technical alignment across tvOS, iOS, Android Mobile, and Android TV (Gatchaman Initiative) via shared architectural vision, reusable components, and regular cross-team technical syncs.}
+      \resumeItem{\textbf{Developer Productivity:} Built \textit{Friday} CLI and automation scripts for module creation and string migrations — cutting PR merge times, onboarding overhead, and repetitive manual work.}
+    \resumeItemListEnd
+
+  \resumeQuadHeading{Software Engineer}{Jun 2016 -- Mar 2018}{Jivy Group}{Chisinau}
+    \resumeItemListStart
+      \resumeItem{Revived Markets Pulse Android app: migrated MVC→MVP and VSS→Git, reducing cold start time from \textbf{\~3 minutes→4 seconds}.}
+      \resumeItem{Introduced Jenkins CI pipelines for Android/Web teams; automated build, QA, and deployment steps.}
+      \resumeItem{Collaborated with product to optimize release cadence, improving time-to-market for new features by \textbf{~20\%}.}
+    \resumeItemListEnd
+
+\resumeHeadingListEnd
+
+% ---- TECHNICAL SKILLS ----
+\section{Technical Skills}
+\small{
+\textbf{Languages:} Kotlin, Java \\
+\textbf{Frameworks \& Libraries:} Jetpack Compose, Hilt, Ktor, Retrofit, Coil \\
+\textbf{Architecture:} Clean Architecture, MVVM, Modularization, SDUI \\
+\textbf{Testing:} Espresso, JUnit, MockK \\
+\textbf{DevOps \& Tooling:} Gradle, GitHub Actions, Jenkins, CI/CD \\
+\textbf{Other:} Localization/i18n, Performance Tuning, System Design
+}
+
+% ---- OPEN SOURCE ----
+\section{Open Source Contributions}
+\small{
+\textbf{DevTools Library} (\href{https://github.com/maximbircu/devtools-library}{GitHub}) — Developer tooling adopted internally at Crunchyroll to tweak feature flags during testing, accelerating QA and release validation. \\
+\textbf{Friday} (\href{https://github.com/maximbircu/friday}{GitHub}) — Automation framework that became the foundation for the internal Friday CLI, streamlining recurring development and release tasks at Crunchyroll. \\
+\textbf{Mocker} — Ktor/Retrofit backend mocking tool for UI testing; contributions to Kotlin compiler plugin examples and open KSP tooling.
+}
+
+% ---- SPEAKING ----
+\section{Speaking \& Publications}
+\small{
+\textbf{Tech Conference Speaker (2019):} Presented live on developer tooling (\textit{DevTools Library}); reinforced adoption and best practices across teams. Recording available upon request.
+}
+
+% ---- MENTORING & TEACHING ----
+\section{Mentoring \& Teaching}
+\small{
+\textbf{Teaching Assistant – Technical University of Moldova} (Sep 2019 – Jul 2021) — Mentored student groups in PBL (Project Based Learning) to define, build, and grow their own mini-startups. \\
+\textbf{Android Development Mentor – Tekwill In Every School} (Mar 2022 – Mar 2024) — Trained up to 30 CS teachers in Android fundamentals; mentored teams for TJA competition, with one winning 3\textsuperscript{rd} place at the e-ICON World Contest in Korea. \\
+\textbf{Android Fundamentals Mentor – Tekwill} (Jul 2018 – Mar 2018) — Designed Android Fundamentals course from scratch, including syllabus, materials, and training delivery.
+}
+
+% ---- EDUCATION ----
+\section{Education}
+\resumeHeadingListStart
+  \resumeQuadHeading{Technical University of Moldova}{2014 -- 2018}{B.Sc. Computer Science, FAF (Filiera Anglofona)}{Chisinau, Moldova}
+\resumeHeadingListEnd
+
+% ---- LANGUAGES ----
+\section{Languages}
+\small{English (C1), Romanian (Native), Russian (C2)}
+
+% ---- AWARDS ----
+\section{Awards}
+\small{1st place in multiple national hackathons during university; recognized for rapid prototyping and cross-functional teamwork.}
+
+\end{document}
