@@ -17,17 +17,33 @@ jobs:
     - name: Install LaTeX
       run: |
         sudo apt-get update
-        sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra
+        sudo apt-get install -y \
+          texlive-full
         
     - name: Build Resume
       run: |
         mkdir -p build
-        pdflatex -output-directory=build -jobname=resume src/resume.tex
+        # Run pdflatex twice to resolve references
+        pdflatex -interaction=nonstopmode -output-directory=build -jobname=resume src/resume.tex
+        pdflatex -interaction=nonstopmode -output-directory=build -jobname=resume src/resume.tex
+        
+    - name: Check if PDF was created
+      run: |
+        if [ ! -f "build/resume.pdf" ]; then
+          echo "ERROR: PDF was not created!"
+          echo "LaTeX log contents:"
+          cat build/resume.log || echo "No log file found"
+          exit 1
+        else
+          echo "PDF created successfully"
+          ls -la build/
+        fi
         
     - name: Create deployment directory
       run: |
         mkdir -p deploy
         cp build/resume.pdf deploy/
+        echo "PDF file size: $(stat -c%s deploy/resume.pdf) bytes"
         
     - name: Create index.html
       run: |

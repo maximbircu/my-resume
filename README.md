@@ -6,9 +6,9 @@ This repository contains my professional resume built with LaTeX.
 
 ## 📄 View Resume
 
-**Latest version:** [https://maximbircu.github.io/my-resume/resume.pdf](https://maximbircu.github.io/my-resume/resume.pdf)
+**Latest version:** [https://www.maximbircu.com/my-resume/resume.pdf](https://www.maximbircu.com/my-resume/resume.pdf)
 
-**Full page view:** [https://maximbircu.github.io/my-resume](https://maximbircu.github.io/my-resume)
+**Full page view:** [https://www.maximbircu.com/my-resume](https://www.maximbircu.com/my-resume)
 
 ## Project Structure
 
@@ -77,13 +77,13 @@ The compiled PDF will be available at `build/resume.pdf`.
 This repository uses GitHub Actions to automatically:
 
 1. **Build** the resume PDF on every push to `main`
-2. **Deploy** to GitHub Pages at [maximbircu.github.io/my-resume](https://maximbircu.github.io/my-resume)
+2. **Deploy** to GitHub Pages at [www.maximbircu.com/my-resume](https://www.maximbircu.com/my-resume)
 3. **Update** the public resume URL automatically
 
 ### Integration with Personal Website
 
 Your personal website can directly link to or embed:
-- **PDF URL**: `https://maximbircu.github.io/my-resume/resume.pdf`
-- **Page URL**: `https://maximbircu.github.io/my-resume`
+- **PDF URL**: `https://www.maximbircu.com/my-resume/resume.pdf`
+- **Page URL**: `https://www.maximbircu.com/my-resume`
 
 No API calls or authentication needed - just use the URLs directly!
