@@ -6,16 +6,18 @@ This repository contains my professional resume built with LaTeX.
 
 ## 📄 View Resume
 
-**Latest version:** [https://www.maximbircu.com/my-resume/resume.pdf](https://www.maximbircu.com/my-resume/resume.pdf)
-
-**Full page view:** [https://www.maximbircu.com/my-resume](https://www.maximbircu.com/my-resume)
+**Latest version:** [https://www.maximbircu.com/my-resume](https://www.maximbircu.com/my-resume)
 
 ## Project Structure
 
 ```
 ├── src/                    # Source files
 │   └── resume.tex         # Main LaTeX resume file
+├── templates/              # HTML templates
+│   └── index.html         # GitHub Pages template
 ├── build/                 # Compiled output (git-ignored)
+├── .github/workflows/     # GitHub Actions
+│   └── build-and-deploy.yml
 ├── Makefile              # Build automation
 ├── .gitignore            # Git ignore patterns
 └── README.md             # This file
